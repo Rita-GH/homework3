@@ -477,18 +477,21 @@ body span.line
 }
 #content .home ul.types li {
     float:left;
-    width:295px;
+    /*width:295px;*/
     padding: 24px 5px 24px 0;
     border-top: 1px solid #D2DCE1;
     cursor: pointer;
 }
-#content .home ul.types li.left-col{
+/*#content .home ul.types li.left-col {
     clear: both;
-}
+}*/
+.box-1 { float:left; clear:left; width: 30%; margin-left: 0; }
+.box { float:left; width: 30%; margin-left: 3%; }
+
 #content .home ul.types li img {
-    display:block;
-    float:left;
-    margin:0 15px 0 0;
+    float: left;
+    display: block;
+    margin: 0px 15px 0px 0px;
 }
 #content .home ul.types li h3 {
     font-family: "Trebuchet MS";
@@ -1206,9 +1209,9 @@ body span.line
     font-size:24px;
 }
 #content .details > ul > li > img {
-    float: right;
+    float: left;
     display: block;
-    padding: 0 0 20px 20px;
+    margin: 0 15px 0 0;
 }
 #content .details p {
     overflow: hidden;

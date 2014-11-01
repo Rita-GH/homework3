@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: rb
- * Date: 31.10.14
- * Time: 18:11
+ * Date: 01.11.14
+ * Time: 22:47
  */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
@@ -20,14 +20,14 @@
 
 
 
-<body>
+<body class="inner">
 
 <div id="wrap">
     <div id="header">
         <h1><a href="<?php echo home_url()?>">GeekHub</a></h1>
 
         <?php wp_nav_menu(array('theme_location'=>'menu',
-                                'menu_class'=>'nav'))?>
+            'menu_class'=>'nav'))?>
 
         <ul class="links">
             <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
@@ -35,17 +35,5 @@
             <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
             <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
         </ul>
-        <span class="line"></span>
 
-        <h4 class="registration">Реєстрацію на 4й сезон закрито</h4>
-        <p class="note">*залиште нам ваш емейл і ми повідомимо вас про початок реєстрації</p>
-        <form action="#">
-            <fieldset>
-                <span></span>
-                <input type="text" class="email" placeholder="Ваш email" />
-                <input type="submit" value="Відіслати" />
-            </fieldset>
-
-        </form>
-        <img src="<?php bloginfo('template_url')?>/images/splash.png" alt="splash" />
     </div>
