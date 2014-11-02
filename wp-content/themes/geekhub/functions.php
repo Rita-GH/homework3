@@ -23,6 +23,10 @@ register_sidebar(array(
     'name'=>'Виджети сайдбара',
     'id'=>'sidebar',
     'description'=>'Виджети сайдбара',
+    'before_title'=>'<h3>',
+    'after_title'=>'</h3>',
+    
+
 
 ))
 ?>
