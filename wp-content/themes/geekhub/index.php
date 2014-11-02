@@ -12,6 +12,7 @@
 
             <ul class="types">
                 <li>
+                    <?php query_posts('category_name="Курси"'); ?>
                     <?php $count = 0;?>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

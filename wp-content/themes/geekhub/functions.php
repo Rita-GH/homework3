@@ -6,27 +6,17 @@ function geekhub_script() {
 }
 /**загружаем стили и скрипты***/
 add_action('wp_enqueue_scripts','geekhub_script');
-
-
+/**загрузка мініатюр**/
 add_theme_support('post-thumbnails');
-
-/**
- * меню
-**/
+/** меню **/
 register_nav_menu('menu','Меню');
-
-
-/**
- * sidebar
- **/
+/** sidebar **/
 register_sidebar(array(
     'name'=>'Виджети сайдбара',
     'id'=>'sidebar',
     'description'=>'Виджети сайдбара',
     'before_title'=>'<h3>',
     'after_title'=>'</h3>',
-    
-
 
 ))
 ?>
