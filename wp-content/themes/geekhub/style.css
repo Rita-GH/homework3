@@ -245,10 +245,16 @@ body span.line
     text-align: center;
     background:url("http://geekhub.ck.ua/images/inner_active.png") center bottom no-repeat;
 }
+.inner #header .nav li.current_page_item  {
+    min-width: 46px;
+    text-align: center;
+    background:url("http://geekhub.ck.ua/images/inner_active.png") center bottom no-repeat;
+}
+
 #header .nav {
     overflow:visible;
     float:right;
-    width:471px;
+
     height:42px;
     margin:34px 0 31px;
 }
@@ -256,6 +262,7 @@ body span.line
     float:left;
     padding: 0 0 0 26px;
 }
+
 #header .nav li a {
     display:block;
     height:16px;
@@ -266,7 +273,7 @@ body span.line
     color:#396375;
     text-transform:uppercase;
 }
-#header .nav li a.active,#header .nav li.active a,#header .nav li a:hover {
+#header .nav li a.active,#header .nav li.active a,#header .nav li a:hover , .inner #header .nav li.current_page_item a, .inner #header .nav li.current_page_item.menu-item-home a{
     color:#e21d5d;
 }
 #header .links {
@@ -477,7 +484,7 @@ body span.line
 }
 #content .home ul.types li {
     float:left;
-    /*width:295px;*/
+    width:295px;
     padding: 24px 5px 24px 0;
     border-top: 1px solid #D2DCE1;
     cursor: pointer;
@@ -485,13 +492,16 @@ body span.line
 /*#content .home ul.types li.left-col {
     clear: both;
 }*/
-.box-1 { float:left; clear:left; width: 30%; margin-left: 0; }
-.box { float:left; width: 30%; margin-left: 3%; }
+.box-1 { float:left; clear:left; width: 33%; margin-left: 0;margin-top: 1.5%; }
+.box { float:left; width: 33%; margin-left: 0.5%; margin-top: 1.5%; }
 
 #content .home ul.types li img {
     float: left;
     display: block;
     margin: 0px 15px 0px 0px;
+}
+#content .home ul.types li img.alignnone {
+    display: none;
 }
 #content .home ul.types li h3 {
     font-family: "Trebuchet MS";
@@ -510,10 +520,11 @@ body span.line
 #content .home ul.types li a.title {
     text-decoration: none !important;
     color: #EA2778;
+    height: 77px;
 }
 #content .home ul.types li a {
     display: block;
-    padding: 10px 0 0 115px;
+    padding: 10px 0 0 0px;
     text-decoration: underline;
     color: #EA2678;
 }
@@ -527,6 +538,9 @@ body span.line
     float:left;
     width:276px;
 }
+/*#content .home ul.social_share > li.widget.widget_text{
+    display: none;
+}*/
 #content .home ul.social_share > li h4 {
     text-align:center;
     font-family: "Trebuchet MS";
@@ -539,6 +553,7 @@ body span.line
     margin: 0 0 22px;
     border-bottom:1px solid #a7c3cf;
 }
+
 #content .home ul.social_share li.vk {
     margin:0 36px;
 }
@@ -756,12 +771,12 @@ body span.line
 #content .team ul li img {
     float:right;
     display:block;
-    margin:0 21px;
+    margin:-15px 21px;
 }
 #content .team ul li p {
     /*float:left;*/
     overflow:hidden;
-    padding:40px 0 0;
+    padding:20px 0 15px;
     text-align:right;
     font-size:14px;
     line-height:20px;
@@ -1220,6 +1235,11 @@ body span.line
     font-size: 13px;
     line-height:18px;
     color: #4C7687;
+}
+#content .details p img{
+    float: right;
+    display: block;
+    margin: 0px 0px 15px 15px;
 }
 #content .details > ul > li  > h3 {
     clear: both;

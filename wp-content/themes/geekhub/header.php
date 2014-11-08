@@ -18,8 +18,6 @@
 
 </head>
 
-
-
 <body>
 
 <div id="wrap">
@@ -29,12 +27,12 @@
         <?php wp_nav_menu(array('theme_location'=>'menu',
                                 'menu_class'=>'nav'))?>
 
-        <ul class="links">
-            <li class="fb"><a href="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
-            <li class="vk"><a href="http://vkontakte.ru/geekhub">Вконтакте</a></li>
-            <li class="tw"><a href="http://twitter.com/#!/geek_hub">twitter</a></li>
-            <li class="yb"><a href="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
-        </ul>
+        <?php if ( is_active_sidebar( 'social' ) ) : ?>
+            <div  class="social">
+                <?php dynamic_sidebar( 'social' ); ?>
+            </div>
+        <?php endif; ?>
+
         <span class="line"></span>
 
         <h4 class="registration">Реєстрацію на 4й сезон закрито</h4>
@@ -46,6 +44,6 @@
                 <input type="submit" value="Відіслати" />
             </fieldset>
 
-        </form>
+        </form
         <img src="<?php bloginfo('template_url')?>/images/splash.png" alt="splash" />
     </div>
